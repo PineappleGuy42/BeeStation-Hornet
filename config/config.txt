@@ -34,7 +34,7 @@ $include performance.txt
 #@SERVERSQLNAME ss13newbs
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
-STATIONNAME Space Station 13
+#STATIONNAME Space Station 13
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
 #HUB
@@ -336,7 +336,7 @@ TICK_LIMIT_MC_INIT 500
 TICKLAG 0.5
 
 ##Can also be set as per-second value, the following value is identical to the above.
-#FPS 20
+#FPS 60
 
 ## Comment this out to disable automuting
 AUTOMUTE_ON
@@ -480,9 +480,9 @@ MINUTE_TOPIC_LIMIT 180
 ## Admins are exempt from these limits.
 ## Hitting the minute limit notifies admins.
 ## Set to 0 to disable.
-SECOND_CLICK_LIMIT 15
+SECOND_CLICK_LIMIT 150
 
-MINUTE_CLICK_LIMIT 500
+MINUTE_CLICK_LIMIT 5000
 
 ##Error handling related options
 ## The "cooldown" time for each occurence of a unique error
@@ -534,19 +534,19 @@ DEFAULT_VIEW 17x15
 
 ## Name your perpetual currency here
 ## This is used within the metashop and earned by playing the game.
-METACURRENCY_NAME BeeCoin
+METACURRENCY_NAME Amogous
 
 ## Grant metacurrency
 ## Comment this out if you don't want players to earn metacurrency
-GRANT_METACURRENCY
+#GRANT_METACURRENCY
 
 ## Respect global bans
 ## Comment this out to ignore global bans
 RESPECT_GLOBAL_BANS
 
 ## Custom shuttle spam prevention. Changine these numbers allows you to change the maxsize and amount of custom shuttles.
-MAX_SHUTTLE_COUNT 6
-MAX_SHUTTLE_SIZE 300
+MAX_SHUTTLE_COUNT 12
+MAX_SHUTTLE_SIZE 1200
 
 ### Fail2Topic settings
 ### fail2topic is a system for automating IP bans for abusers of the world/Topic API.
@@ -585,7 +585,7 @@ CENTCOM_BAN_DB https://centcom.melonmesa.com/ban/search
 
 ### Autotransfer Settings
 ## Uncomment to enable shuttle autotransfer
-VOTE_AUTOTRANSFER_ENABLED
+#VOTE_AUTOTRANSFER_ENABLED
 ## Time (in deciseconds) before the first transfer vote. Default: 90 minutes
 VOTE_AUTOTRANSFER_INITIAL 54000
 ## Time (in deciseconds) between subsequent transfer votes. Default: 30 minutes
@@ -595,7 +595,7 @@ VOTE_AUTOTRANSFER_INTERVAL 18000
 GHOST_ROLE_COOLDOWN 3000
 
 ## Enable/disable roundstart station traits
-#STATION_TRAITS
+STATION_TRAITS
 
 ### ALL SETTINGS FOR SSmetrics ###
 ## Uncomment the line below to enable SSmetrics sending data to ElasticSearch. You will need to fill in the other lines if you do
